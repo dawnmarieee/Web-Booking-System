@@ -1,0 +1,652 @@
+
+    /*
+
+    darkblue - 061058 - rgb(6,16,88)
+    sky - 77CAEA - rgb(119,202,234)
+    skylight - CCD7E9 - rgb(204,215,233)
+    lightest - E7EFFA - rgb(231,239,250)
+    pink - FFBAD2 - rgb(255,186,210)
+    blue - 4731F1 - rgb(71,49,241)
+
+    */
+  
+  body {
+     
+       background-image: linear-gradient(to right, rgb(231,239,350), rgb(245, 247, 255),
+     rgb(245, 247, 255), rgb(246, 248, 255), rgb(246, 248, 255), rgb(255, 255, 255));
+       background-color: rgb(240, 243, 255);
+       background-size: cover;
+       background-repeat: no-repeat;
+       top: 0;
+       left: 0;
+       font-family: 'Poppins', arial, sans-serif;
+       color: rgb(134, 143, 155);
+       overflow: hidden;
+       
+    }
+
+   
+    #floating { 
+        
+        grid-area: 1 / 1 / 1 / span 3;
+        background-color: rgb(119,202,234);
+        width: 100%; height: 110%;
+        border-radius: 50px;
+        padding: 2px 0 2px 0;
+        margin: -20px 80px -5px -40%;
+        border-radius: 50%;
+
+        /*
+        background-color: rgb(231,239,250);
+        grid-area: 1 / 1 / 1 / span 3;
+        border-radius: 40px;
+        padding: 5px 0 10px 0;
+        margin: 60px 80px 60px 80px;
+        border-radius: 50px;*/
+
+        animation-name: floating; 
+        animation-duration: 3s; 
+        animation-iteration-count: infinite; 
+        animation-timing-function: ease-in-out; 
+    } 
+
+    @keyframes floating { 
+        0% { transform: translate(0,  0px); } 
+        50%  { transform: translate(0, 20px); } 
+        100%   { transform: translate(0, -0px); }     
+    }
+    
+   .grid {
+    
+       background-color: transparent;
+       display: grid;
+       grid-template-columns: repeat (3, 1fr);
+       
+    }
+
+   header {
+    
+       position: relative;
+       background-color: rgb(231,239,252);
+       grid-area: 1 / 1 / 1 / span 3;
+       border-radius: 40px;
+       padding: 5px 0 10px 0;
+       margin: 60px 80px 60px 80px;
+       border-radius: 50px;
+       box-shadow:  100px 2px 20px rgb(255, 255, 255);         
+       /*box-shadow: 10px 20px 40px hsl(0, 0%, 50%);*/
+    }
+
+   header h2 {
+    
+       color: hsl(0, 0%, 34%);
+       font-size: 24px;
+       background: #cfccfd;
+       border-radius: 50px;
+       font-style: oblique;
+       background: transparent;
+       padding: 15px 0 0 60px;
+       font-weight: lighter;
+       
+    }
+
+    .dropbtn {
+        background-color: transparent;
+        color: transparent;
+        margin: 0;
+        box-shadow:  transparent;
+        border: solid 1px transparent;
+    }
+    
+   nav {
+    
+       background-color: transparent;
+       grid-area: 1 / 1 / 1 / span 3;
+       margin-bottom: -60px;
+    }
+
+   nav ul {
+    
+       background-color: transparent;
+       list-style: none;
+       text-align: right;
+       padding-top: 10px;
+       padding-right: 50px;
+    }
+
+   nav li {
+
+       display: inline;
+       padding: 0px 10px;
+    }
+
+   nav a {
+    
+       text-decoration: none;
+       font-size: 14px;
+       color: rgb(6,16,88);
+       background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(240, 239, 253, 0.5), rgba(198, 195, 221, 0.5)),
+                    linear-gradient(to right, rgba(196, 192, 223, 0.5), rgba(245, 245, 247, 0.9), rgba(255, 255, 255, 0.9));       
+       text-shadow: 1px 1px 4px rgba(6, 5, 10, 0.6);
+                    /*1px -5px 20px rgba(136, 128, 194, 0.75);*/
+       border-radius: 50px;
+       /*background: rgb(134, 143,320);*/
+       box-shadow:  -12px 10px 24px 0 rgba(0, 0, 0, 0.2),
+                    12px -10px 24px 0 rgba(255, 255, 255, 0.5);
+       padding: 10px 40px;
+       transition-duration: 0.4s;
+    }
+   
+   nav a:hover {    
+
+        text-decoration: none;
+        font-size: 14px;
+        color: white;
+        background: linear-gradient(to bottom, rgba(252, 195, 215, 0.25), rgba(253, 166, 197, 0.5), rgba(140, 134, 184, 0.5)),
+                    linear-gradient(to right, rgb(255, 46, 119), rgb(255, 46, 119),rgb(250, 183, 206));       
+        text-shadow: 1px 1px 5px rgb(92, 8, 37);
+                    /*1px -5px 20px rgba(136, 128, 194, 0.75);*/
+        border-radius: 50px;
+        /*background: rgb(134, 143,320);*/
+        box-shadow:  -12px 10px 24px 0 rgba(0, 0, 0, 0.2),
+        12px -10px 24px 0 rgba(255, 255, 255, 0.5);
+        padding: 10px 40px;
+        transition-duration: 0.4s;
+      
+    }
+
+   nav a:active {
+    
+        text-decoration: none;
+        font-size: 14px;
+        color: white;
+        background: #cfccfd;
+        /*linear-gradient(to bottom,rgba(123, 177, 247, 0.10),rgba(123, 177, 247, 0.10)),
+                    linear-gradient(to right,rgba(76, 81, 88,0.10),rgba(76, 81, 88,0.10));*/
+        text-shadow: 1px 2px 10px rgba(6, 5, 10, 0.95),
+                     1px 2px 10px rgba(6, 5, 10, 0.95);                     
+                     
+        border-radius: 50px;
+        /*background: rgb(134, 143,320);*/
+        box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+        inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+        justify-content: space-around;
+        align-items: center;         
+        padding: 10px 40px;
+        transition-duration: 0.4s;
+       }
+
+   .box {
+
+       grid-area: 2 / 2 / 2 / 2;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+
+   .contents {
+       
+       background-color: transparent;
+       font-size: 16px;
+       padding: 0 20px;
+       margin: 45px 0 10px 0;
+    }
+   
+   #info1 {
+        
+        position:relative;
+        grid-area: 1 / 1 / 1 / 1;
+        max-width: 600px;
+        height: auto;
+        display: block;
+        margin: 5px 0 20px 100px;
+        text-align: center;
+        
+        }
+
+    
+    /*slideshow*/
+      
+    #info1 img {
+
+        background-color: rgb(231,239,250);
+        position: absolute;
+        max-width: 120%;
+        height: auto;
+        left: 0;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+      }
+    @keyframes yeahbebegirl {
+      
+        0% {
+            opacity:1;
+        }
+
+        16% {
+            opacity:1;
+          }
+        
+        25% {
+            opacity:0;
+        }
+
+        91% {
+            opacity:0;
+        }
+        
+/**/    100% {
+            opacity:1;
+        }
+        
+    }
+
+    #info1 img:nth-of-type(1) {
+        animation-delay: 12s;
+        animation-name: yeahbebegirl;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 24s;
+        animation-direction: alternate;
+    }
+    #info1 img:nth-of-type(2) {
+        animation-delay: 8s;
+        animation-name: yeahbebegirl;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 24s;
+        animation-direction: alternate;
+    }
+    #info1 img:nth-of-type(3) {
+        animation-delay: 4s;
+        animation-name: yeahbebegirl;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 24s;
+        animation-direction: alternate;
+    }
+    #info1 img:nth-of-type(4) {
+        animation-delay: 0s;
+        animation-name: yeahbebegirl;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 24s;
+        animation-direction: alternate;
+    }
+
+
+   .info2 {
+        
+        grid-area: 1 / 2 / 1 / 2;
+        max-width: 320px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .info2 h1 {
+        
+        font-size: 40px;
+        color: rgb(6,16,88);
+     }
+
+   .info h1 {
+
+       color: hsl(336, 100%, 50%);
+    }
+
+   .button1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: bolder;
+        color: white;
+        background-image: linear-gradient(to right, rgba(71,49,241,1), rgba(71,49,241,1), rgba(194, 42, 95,0.75));
+        border-radius: 30px 30px;
+        /*box-shadow:  12px 20px 65px 0 rgb(76, 81, 88), 
+                   -12px 12px 24px 0 rgba(123, 177, 247, 0.5);*/
+        padding: 21px 40px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        display: block;
+        margin: auto;
+        border: solid 1px transparent;
+        
+    }
+
+   .button1:hover {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: white;
+        background-image: linear-gradient(to right, rgba(194, 42, 95,0.75), rgba(71,49,241,1));
+        border-radius: 30px 30px;
+        /*box-shadow:   12px 20px 65px 0 rgba(76, 81, 88), 
+                    -12px 12px 25px 0 rgba(123, 160, 247, 0.5);*/
+        padding: 21px 40px;
+       
+    }
+
+   /**/
+   footer {
+       
+       font-size: 11px;
+       background-color: transparent;
+       grid-area: 4 / 1 / 4 / span 3;
+       display: flex;
+       justify-content: center;
+       padding: 10px 0;
+       margin: 20px 0 0px;
+
+   }
+
+   @media only screen and (max-width: 1200px) {
+   
+   body {
+       overflow: scroll;
+       
+   }
+
+   header {
+       
+       grid-area: 1 / 1 / 1 / span 3;
+       box-shadow: 2px 2px 15px hsl(0, 0%, 54%);
+       border-radius: 30px;
+       margin: 30px 30px;
+       background-color: rgb(231,239,250);
+   }
+
+   h2 {
+       color:hsl(0, 0%, 34%);
+       text-shadow: 1px 1px 6px hsl(0, 0%, 34%);
+       font-size: 24px;
+       font-style: oblique;
+       background: transparent;
+       font-weight: lighter;
+       padding: 50px 50px 0px 50px;
+       text-align: center;
+   }
+
+   /**/
+   .dropbtn {
+       background-color: transparent;
+       color: rgb(97, 77, 248);
+       margin: 16px;
+   }
+   
+   .dropdown {
+        position: relative;
+        display: inline-block;
+   }
+
+   .dropdown-content {
+       display: none;
+       position: fixed;
+       z-index: 1;
+   }
+
+   .dropdown-content a {
+       color: rgb(71,49,241);
+       /*padding: 12px 16px;*/
+       text-decoration: none;
+       display: block;
+   }
+
+   .dropdown-content a:hover {
+       background-color: transparent;
+       color: rgb(71,49,241);
+   }
+
+   .dropdown:hover .dropdown-content {
+       display: block;
+       background-color: rgba(119,202,234,0.85);
+       border-radius: 0 70px 70px 0;
+   }
+
+   .dropdown:hover .dropbtn {
+       background-color: rgb(119,202,234);
+       color: rgb(252, 92, 148);
+       
+   }
+
+   .icon-home {
+        background: url("images/home.png") center center no-repeat;
+        width: 5px;
+        height: 5px;
+    }
+  
+   nav {
+       background-color: transparent;
+       grid-area: 1 / 1 / 1 / 1;
+       padding: 0 0 10px 0;
+       
+   }
+
+   nav ul {
+        
+       background-color: transparent;
+       list-style: none;
+       text-align: left;
+       
+   }
+
+   nav li {
+       
+       display: inline;
+       padding: 0px 10px;
+   }
+
+   nav a {
+       float: none;
+       display:block;
+       text-decoration: none;
+       font-size: 12px;
+       color: white;
+       text-shadow: 1px 2px 10px rgba(28, 24, 50, 0.75);
+       border-radius: 50px;
+       background: #cfccfd;
+       box-shadow:  20px 20px 60px #b0add7, 
+                   -20px -20px 60px #eeebff;
+       padding: 8px 20px;
+       transition-duration: 0.4s;
+   }
+   
+   nav a:hover {
+     
+       font-size: 12px;
+       color: white;
+       text-shadow: 1px 1px 10px white;
+       border-radius: 50px;
+       background: hsl(336, 100%, 50%);
+       padding: 8px 20px;
+       transition-duration: 0.4s;
+    }
+
+   nav a:active {
+
+       font-size: 12px;
+       color: hsl(336, 100%, 50%);
+       text-shadow: 1px 1px 10px hsl(336, 100%, 50%);
+       border-radius: 50px;
+       background: white;
+       padding: 8px 20px;
+    }
+
+   /**/
+   .box {
+      
+       grid-area: 2 / 1 / span 2 / 2;
+       display: grid;
+       grid-template-columns: 1fr;
+       
+    }
+
+   .contents {
+       background-color: transparent;
+       font-size: 14px;
+       padding: 20px 20px 10px 20px;
+       margin-top: 5px;
+       
+    }
+
+   
+    #info1 {
+       
+        position:relative;
+        grid-area: 3 / 2 / 4 / 5;
+        grid-template-columns: 1fr;
+        height: auto;
+        display: grid;
+        margin: 10px 10px 100px 10px;
+        text-align: center;
+    }
+
+    /*slideshow*/
+      
+    #info1 img {
+        background-color: rgb(231,239,250);
+        position: absolute;
+        max-width: 90%;
+        min-width: 90%;
+        height: auto;
+        margin: 0 auto;
+        
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+
+      }
+
+    @keyframes yeahbebegirl {
+      
+        0% {
+            opacity:1;
+        }
+
+        16% {
+            opacity:1;
+          }
+        
+        25% {
+            opacity:0;
+        }
+
+        91% {
+            opacity:0;
+        }
+        
+/**/    100% {
+            opacity:1;
+        }
+        
+    }
+
+    #info1 img:nth-of-type(1) {
+        animation-delay: 12s;
+        animation-name: yeahbebegirl;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 24s;
+        animation-direction: alternate;
+    }
+    #info1 img:nth-of-type(2) {
+        animation-delay: 8s;
+        animation-name: yeahbebegirl;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 24s;
+        animation-direction: alternate;
+    }
+    #info1 img:nth-of-type(3) {
+        animation-delay: 4s;
+        animation-name: yeahbebegirl;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 24s;
+        animation-direction: alternate;
+    }
+    #info1 img:nth-of-type(4) {
+        animation-delay: 0s;
+        animation-name: yeahbebegirl;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 15s;
+        animation-direction: alternate;
+    }
+
+
+   /*.info2 {
+        border: solid 1px blue;
+        grid-area: 2 / 3 / 2 / span 3;
+        max-width: 320px;
+        height: auto;
+        display: block;
+        margin: 30px 20px 20px 200px;
+        text-align: center;
+    }*/
+
+   .info h1 {
+    
+       color: hsl(336, 100%, 50%);
+    }
+
+   .info2 {
+    
+       grid-area: 4 / 3 / 5 / 4;
+       max-width: 80%;
+       display: block;
+       margin: 80px auto 10px auto;
+       text-align: center;
+    }
+
+   .info2 h1 {
+       padding-top: 20px;
+       font-size: 20px;
+       color: hsl(0, 0%, 42%);
+    }
+
+   .button1 {
+
+       font-size: 12px;
+       font-weight: bold;
+       color: white;
+       background-image: linear-gradient(to right, rgba(71,49,241,1), rgba(71,49,241,1), rgba(194, 42, 95,0.75));
+       /*box-shadow:  12px 20px 65px 0 rgb(76, 81, 88), 
+                   -12px 12px 24px 0 rgba(123, 177, 247, 0.5);*/
+       border-radius: 20px 20px;
+       padding: 10px 30px;
+       cursor: pointer;
+       transition-duration: 0.4s;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       
+    }
+
+   .button1:hover {
+
+       font-size: 12px;
+       color: white;
+       background-image: linear-gradient(to right, rgba(194, 42, 95,0.75), rgba(71,49,241,1));
+       /*box-shadow:   12px 20px 65px 0 rgb(76, 81, 88), 
+                    -12px 12px 24px 0 rgba(123, 177, 247, 0.5);*/
+       border-radius: 20px 20px;
+       padding: 10px 30px;
+    }
+   
+   /**/
+   footer {
+       
+       font-size: 11px;
+       background-color: transparent;
+       grid-area: 4 / 1 / 4 / span 3;
+       display: flex;
+       justify-content: center;
+       padding-top: 5px;
+       padding-bottom: 20px;
+      
+    }
+    
+      
+}
