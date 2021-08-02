@@ -1,2 +1,2 @@
 # Web-Booking-System
-Our thesis project, it includes the website. 
+This is a website for a scheduling company.
