@@ -31,7 +31,7 @@
                             </div>
                     </div>
                 </nav>
-                <h2><span style="font-weight: 900; font-style: italic; color: rgb(6,16,88);">AC-DC Service Center</h2></span>
+                <h2><span style="font-weight: 900; font-style: italic; color: rgb(6,16,88);">AC-DC Service Center</span></h2>
                 <main class="contents box">
                     <div class="contact-box">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -61,7 +61,7 @@
         </div>  
             <!--jquery-->
             <script type="text/javascript" src="js/jquery.js"></script>
-            <script type="text/javascript" src="jqueryui/jquery-ui.js"></script>
+           
             <script>
                 const faBar {
 
