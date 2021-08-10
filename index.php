@@ -43,7 +43,7 @@
                 <div class="info2">
                         <h1>Aircon installation, maintenance & home repair services</h1>
                         <p>Offers aircon general cleaning, repair, dismantling for window types and split types.</p><br>
-                        <a href="booking/home.php" data-toggle="modal"><button class="button1" type="button">Book a Service</button><br></a> 
+                        <a href="booking/home.php" data-toggle="modal"><button class="button1" type="button">Book a Service</button></a> <br>
                 </div>
                 </main> 
                 
