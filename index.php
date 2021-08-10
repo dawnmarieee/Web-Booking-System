@@ -55,7 +55,6 @@
         </div>  
             <!--jquery-->
             <script type="text/javascript" src="js/jquery.js"></script>
-            <script type="text/javascript" src="jqueryui/jquery-ui.js"></script>
             <script>
                 const faBar {
 
